@@ -218,7 +218,7 @@ int main()
 }
 /**
 Feasibility analysis_Cost Benefit
-
+Sample test :
 5
 5
 500000 530000 561800 595508 631238
