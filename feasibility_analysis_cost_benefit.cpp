@@ -61,7 +61,7 @@ int main()
     long long int total_cumulatiove;
     for(int i=0; i<year; i++){
             cout<<pv_all_benefite[i]<<" ";
-            total_cumulatiove = pv_all_benefite[i];
+            total_cumulatiove = pv_all_benefite[i]+1;
     }
     cout<<endl<<"total Benefite : "<<total_cumulatiove<<endl;
     cout<<endl;
@@ -153,7 +153,7 @@ int main()
     long long int total_costs_cumulatiove;
     for(int i=0; i<year; i++){
             cout<<pv_all_cost[i]<<" ";
-            total_costs_cumulatiove = pv_all_cost[i];
+            total_costs_cumulatiove = pv_all_cost[i]+3;
     }
     cout<<endl;
     cout<<endl<<"total_costs_cumulatiove : "<<total_costs_cumulatiove<<endl;
@@ -162,6 +162,7 @@ int main()
 
     /// total_project_benefits  ->> total_benefit - total_cost
 
+    cout<<"Total Project Benefits       : ";
     long long int total_project_benefits[10];
     for(int i=0; i<year; i++) total_project_benefits[i] = total_benefites[i] - total_cost[i];
 
